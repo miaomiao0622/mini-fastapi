@@ -1,0 +1,29 @@
+# 第 8 周 git 讲义：.gitignore 决定哪些文件不进版本库
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 虚拟环境（第 5 周工程化）
+.venv/
+venv/
+env/
+
+# 构建产物
+build/
+dist/
+*.egg-info/
+
+# 测试与工具缓存
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+
+# 编辑器 / 系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log

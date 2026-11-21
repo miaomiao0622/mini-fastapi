@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mini-fastapi"
+version = "0.9.0"
+description = "面向对象分析与设计 · 第9周实验：手写一个迷你 FastAPI（Request + Response）"
+requires-python = ">=3.12"
+dependencies = []                      # 课程要求：全程只用标准库，零第三方依赖
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]       # 可选的开发工具，不装也能跑
+
+[project.scripts]
+mini-fastapi = "mini_fastapi.demo:main"
+
+[tool.setuptools]
+packages = ["mini_fastapi"]
+
+[tool.ruff]
+line-length = 100

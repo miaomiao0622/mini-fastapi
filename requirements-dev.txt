@@ -1,0 +1,4 @@
+# 开发时才需要；可选安装：python -m pip install -r requirements-dev.txt
+# pyproject.toml 里写的是宽松范围，这里按讲义约定锁定精确版本。
+pytest==8.3.3
+ruff==0.6.9
